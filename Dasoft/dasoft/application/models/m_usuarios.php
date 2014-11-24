@@ -13,7 +13,7 @@ function iniciarSesion($usu,$pass){//funcion para buscar el usuario xD
 		$this->db->where('usuario',$usu);
 		$this->db->where('password',$pass);
 		$consulta=$this->db->get('usuarios');
-     		return $consulta->result();
+     	return $consulta->row();
    		
 }
 function borra($id){

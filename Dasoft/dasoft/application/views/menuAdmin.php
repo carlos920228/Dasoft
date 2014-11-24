@@ -10,48 +10,32 @@
 <h3>Sistema Dasoft</h3>
 </div>
 <div id="Menu">
-<ul class="nav">
-	<li><a href="<?php echo base_url() ?>index.php">Salir</a></li>
-	<li><a href="">Casos</a>
-		<ul>
-			<li><a href="<?php echo base_url() ?>index.php/c_usuarios/agregarCaso2">Agregar Casos</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_usuarios/borrarCasos">Borrar Casos</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_usuarios/modificarCasos">Modificar Casos</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_usuarios/verCasos">Ver mis casos</a></li>
-		</ul>
-	</li>
-	<li><a href="">Audiencias</a>
-		<ul>
-			<li><a href="">Agregar Audiencia</a></li>
-			<li><a href="">Borrar Audiencia</a></li>
-			<li><a href="">Modificar Audiencia</a></li>
-			<li><a href="">Ver mis Audiencias</a></li>
-		</ul>
-	</li>
-	<li><a href="">Pagos Cliente</a>
-		<ul>
-			<li><a href="">Agregar Pago</a></li>
-			<li><a href="">Borrar Pago </a></li>
-			<li><a href="">Modificar Pago</a></li>
-			<li><a href="">Ver pagos caso</a></li>
-		</ul>
-	</li>
-	<li><a href="">Agenda</a>
-		<ul>
-			<li><a href="">Agregar Cita</a></li>
-			<li><a href="">Borrar Cita</a></li>
-			<li><a href="">Modificar Cita</a></li>
-			<li><a href="">Ver citas</a></li>
-		</ul>
-	</li>
-	<li><a href="">Abogados</a>
-		<ul>
-			<li><a href="<?php echo base_url() ?>index.php/c_abogados/agregarAbogado">Agregar abogado</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_abogados/borrarAbogados">Borrar abogado</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_abogados/modificarAbogados">Modificar abogado</a></li>
-			<li><a href="<?php echo base_url() ?>index.php/c_abogados/verAbogados">Ver abogados</a></li>
-		</ul>
-	</li>
+  <ul class="nav">
+  <li><a href="<?php echo base_url() ?>index.php">Salir</a></li>
+  <li><a href="">Casos</a>
+    <ul>
+      <li><a href="<?php echo base_url() ?>index.php/c_usuarios/agregarCaso2">Agregar Casos</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_usuarios/borrarCasos">Borrar Casos</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_usuarios/modificarCasos">Modificar Casos</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_usuarios/verCasos">Ver mis casos</a></li>
+    </ul>
+  </li>
+  <li><a href="">Clientes</a>
+    <ul>
+      <li><a href="<?php echo base_url() ?>index.php/c_clientes/agregarCliente">Agregar clientes</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_clientes/borrarClientes">Borrar clientes</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_clientes/modificarClientes">Modificar clientes</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_clientes/verClientes">Ver clientes</a></li>
+    </ul>
+  </li>
+  <li><a href="">Abogados</a>
+    <ul>
+      <li><a href="<?php echo base_url() ?>index.php/c_abogados/agregarAbogado">Agregar abogado</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_abogados/borrarAbogados">Borrar abogado</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_abogados/modificarAbogados">Modificar abogado</a></li>
+      <li><a href="<?php echo base_url() ?>index.php/c_abogados/verAbogados">Ver abogados</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 <div id="Contenido">

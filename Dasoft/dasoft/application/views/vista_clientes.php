@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="http://localhost/proyectos/estilo.css">
-<title>Editar abogados</title>
+<title>Mis casos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 <link href="<?php echo base_url()?>css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,6 @@
 			<li><a href="<?php echo base_url() ?>index.php/c_clientes/verClientes">Ver clientes</a></li>
 		</ul>
 	</li>
-	</li>
 	<li><a href="">Abogados</a>
 		<ul>
 			<li><a href="<?php echo base_url() ?>index.php/c_abogados/agregarAbogado">Agregar abogado</a></li>
@@ -44,34 +43,39 @@
 </ul>
 </div>
 <div id="Contenido">
-<h1><b>Abogados</b></h1>
+<h1><b>Mis Clientes</b></h1>
 
 <br/>
 
 <?php if (empty($resultado)){ ?>
-		<b>No tienes Contactos</b>
+		<b>No tienes clientes registrados</b>
 <?php 	}else{ ?>
+		Usted Tiene <?php echo count($resultado) ?> clientes(s)<br/><br/>
+		
 		<table class="table table-bordered ">
 			<tr>
+				<td>#</td>
+				<td>RFC</td>
 				<td>Nombre</td>
-				<td>Apellido paterno</td>
-				<td>Apellido materno</td>
-				<td>Telefon</td>
-				<td>Correo</td>
-				<td>Editar</td>
+				<td>Apellido Paterno</td>
+				<td>Apellido Materno</td>
+				<td>Colonia</td>
+				<td>Calle</td>
+				<td>Numero</td>
 			</tr>
+		<?php $numeroCaso=1;?>	
 		<?php foreach ($resultado as $contacto){ ?>
-		
 			<tr>
-				<td><?php echo $contacto->nombre ?> </td>
-				<td><?php echo $contacto->apellidoPaterno ?> </td>
-				<td><?php echo $contacto->apellidoMaterno ?> </td>
-				<td><?php echo $contacto->telefono ?> </td>
-				<td><?php echo $contacto->email ?> </td>
-				<td>
-				<a href="<?php echo base_url() ?>index.php/c_abogados/borrar/<?php echo  $contacto->idabogado ?>" class="btn btn-danger">Borrar</a>
-				</td>
+				<td><?php echo $numeroCaso?></td>
+				<td><?php echo $contacto->rfc?> </td>
+				<td><?php echo $contacto->nombre?> </td>
+				<td><?php echo $contacto->apellidoPaterno?> </td>
+				<td><?php echo $contacto->apellidoMaterno?> </td>
+				<td><?php echo $contacto->colonia?> </td>
+				<td><?php echo $contacto->calle?> </td>
+				<td><?php echo $contacto->numero?> </td>
 			</tr>
+		<?php $numeroCaso++;?>		
 		<?php } ?>
 		</table>
 

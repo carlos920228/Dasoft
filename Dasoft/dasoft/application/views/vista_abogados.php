@@ -24,28 +24,12 @@
 			<li><a href="<?php echo base_url() ?>index.php/c_usuarios/verCasos">Ver mis casos</a></li>
 		</ul>
 	</li>
-	<li><a href="">Audiencias</a>
+	<li><a href="">Clientes</a>
 		<ul>
-			<li><a href="">Agregar Audiencia</a></li>
-			<li><a href="">Borrar Audiencia</a></li>
-			<li><a href="">Modificar Audiencia</a></li>
-			<li><a href="">Ver mis Audiencias</a></li>
-		</ul>
-	</li>
-	<li><a href="">Pagos Cliente</a>
-		<ul>
-			<li><a href="">Agregar Pago</a></li>
-			<li><a href="">Borrar Pago </a></li>
-			<li><a href="">Modificar Pago</a></li>
-			<li><a href="">Ver pagos caso</a></li>
-		</ul>
-	</li>
-	<li><a href="">Agenda</a>
-		<ul>
-			<li><a href="">Agregar Cita</a></li>
-			<li><a href="">Borrar Cita</a></li>
-			<li><a href="">Modificar Cita</a></li>
-			<li><a href="">Ver citas</a></li>
+			<li><a href="<?php echo base_url() ?>index.php/c_clientes/agregarCliente">Agregar clientes</a></li>
+			<li><a href="<?php echo base_url() ?>index.php/c_clientes/borrarClientes">Borrar clientes</a></li>
+			<li><a href="<?php echo base_url() ?>index.php/c_clientes/modificarClientes">Modificar clientes</a></li>
+			<li><a href="<?php echo base_url() ?>index.php/c_clientes/verClientes">Ver clientes</a></li>
 		</ul>
 	</li>
 	<li><a href="">Abogados</a>

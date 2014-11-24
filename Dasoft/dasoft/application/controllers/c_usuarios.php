@@ -31,21 +31,25 @@ class C_usuarios extends CI_Controller {
 	}
 	public function index(){
 		if($this->input->post()){
-			$this->reglas2();
+		$this->reglas2();
 		if($this->form_validation->run()== TRUE){
 		$datos=$this->input->post();
 		$usu=$this->input->post('usuario');//obtenemos el nombre del usuario
 		$pass=$this->input->post('password');//obtenemos el pass del usuario
-		$rol['rol_usuario']=$this->m_usuarios->iniciarSesion($usu,$pass);//mandamos a llamar la funcion del modelo m_usuarios
-		if(empty($rol['rol_usuario'])){
+		$rol=$this->m_usuarios->iniciarSesion($usu,$pass);//mandamos a llamar la funcion del modelo m_usuarios
+		if(empty($rol)){
 			echo "Usuario invalido";
 		}else{
-			$this->load->view('menuAdmin');
-		}
+		if($rol->rol == 'abogado'){
+		$this->load->view('menuAdmin');
 		}else{
-		$this->load->view('inicioSesion');
+			echo "Aun estamos trabajando en tu menu, por ahora no esta listo.<br/>";
+			echo "aun debes esperar";
+		}
 		}
 			
+		}else{	
+		$this->load->view('inicioSesion');}
 		}else{	
 		$this->load->view('inicioSesion');}
 	}
